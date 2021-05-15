@@ -3,6 +3,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   color: #444444;
+  overflow-x: hidden;
 }
 
 a {
@@ -394,4 +395,55 @@ h6 {
 .login-form form h4 {
   font-weight: 100 !important;
   font-family: "Montserrat" !important;
+}
+
+.ab-info {
+  align-self: center;
+}
+
+.ab-info p {
+  font-size: 26px;
+  font-family: "Raleway";
+  letter-spacing: 2px;
+  line-height: normal;
+}
+
+.it1 {
+  position: absolute;
+  top: -20px;
+  left: -35%;
+  height: 150vh;
+}
+
+.ai1 {
+  /* width: fit-content; */
+  position: absolute;
+  left: -20%;
+}
+.ai1 img {
+  width: 150%;
+}
+
+.ab-info h1 {
+  color: #222;
+  margin-bottom: 20px;
+}
+.ai2 img {
+  width: 150%;
+}
+
+.gg {
+  opacity: 0;
+  transform: translateY(15vh);
+  transition: 1500ms;
+}
+
+.active {
+  opacity: 1;
+  transform: none;
+}
+.aa0,
+.aa1,
+.aa2 {
+  transition-delay: 0.3s;
 }

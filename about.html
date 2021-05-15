@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Flip-X</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        setTimeout(function () {
+          $(".ai0, .aa0").addClass("active");
+        }, 500);
+        $(window).scroll(function () {
+          var s = $(window).scrollTop();
+          //if(s > 100){
+          //	$('.bg2').addClass('active')
+          //}
+          if (s < $(".ai1").offset().top - 400) {
+            $(".ai1, .aa1").removeClass("active");
+            $(".ai0, .aa0").addClass("active");
+            $(".aa2, .ai2").removeClass("active");
+          }
+          if (
+            s > $(".ai1").offset().top - 400 &&
+            s < $(".ai1").offset().top - 100
+          ) {
+            $(".ai1, .aa1").addClass("active");
+            $(".ai0, .aa0").removeClass("active");
+            $(".ai2, .aa2").removeClass("active");
+          }
+          if (s > $(".aa1").offset().top + 200) {
+            $(".ai0, .aa0").removeClass("active");
+            $(".ai2, .aa2").removeClass("active");
+            $(".aa2, .ai2").addClass("active");
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="row">
+        <div class="container d-flex align-items-center">
+          <div class="col-md-4">
+            <nav class="nav-menu d-none d-lg-block">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="drop-down">
+                  <a href="">Register</a>
+                  <ul>
+                    <li class="drop-down">
+                      <a href="#">Deep Drop Down</a>
+                      <ul>
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="register-to-study.html">Register to Study</a>
+                    </li>
+                    <li>
+                      <a href="register-to-teach.html">Register to Teach</a>
+                    </li>
+                    <!-- <li><a href="#">Drop Down 4</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="index.html" class="logo mr-auto"
+              ><img
+                src="./assets/logo/flipx_ek_aur.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <nav class="nav-menu d-none d-lg-block float-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- <h1 class="logo mr-auto"><a href="index.html">Kautukum</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+
+        <!-- .nav-menu -->
+
+        <!-- <a href="#about" class="get-started-btn">Get Started</a> -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <p>&nbsp;</p>
+    <section class="about container mb-5 mt-5 pt-5">
+      <div class="row">
+        <div class="col-md-6 ab-info aa0 gg">
+          <h1>We are the best Sneaker platform on the internet</h1>
+          <p>
+            FlipX is India’s First Streetwear reselling platform . Our goals are
+            to provide authentic streetwear to customers without any hassle and
+            . We are a platform which allows auctioning of streetwear so
+            multiple buyers and sellers can have the option for a reasonable
+            deal.
+          </p>
+        </div>
+        <div class="col-md-6 ab-img ai0 gg">
+          <img
+            src="assets/img/air-jordan-1-retro-high-fearless-unc-chicago-4-1000.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <!-- <img src="assets/img/adidas-yeezy-700-v3-safflower-pic02-removebg-preview_637x.png" class="it1" alt=""> -->
+      <div class="col-md-6 ab-img ai1 gg">
+        <img src="assets/img/aj1-ab2.png" alt="" />
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>&nbsp;</p>
+        </div>
+        <div class="col-md-6 text-right ab-info gg aa1">
+          <p>
+            The marketplace takes place over the internet where buyers can place
+            bids and sellers can place asks via the “FlipX” platform, further
+            the buyers have an option to buy directly from FlipX in which the
+            product has a fixed price ,all time availability and 100% Verified
+            Items.
+          </p>
+          <p>
+            We are the clutch for the sneakerheads India was missing. FlipX
+            provides both the buyer and the seller with the usable data like
+            current market value, number of items sold, loss or gain on items,
+            future release dates, transparent sales charts. This data can be
+            used to ensure you never overpay or undersell.
+          </p>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div class="row">
+        <div class="col-md-6 text-left pt-7 mt-5 ab-info aa2 gg">
+          <p>
+            We have sneaker verification experts which verifies all the sneakers
+            sold from our platform. When a deal is finalised between the seller
+            and a buyer the seller ships the item to the FlipX warehouse , where
+            the item is verified by the experts then shipped to the buyer.
+          </p>
+        </div>
+        <div class="col-md-6 ab-img ai2 gg">
+          <img
+            src="assets/img/wethenew-sneakers-france-yeezy-700-V3-brown-2_1200x.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
