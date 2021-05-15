@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -15,7 +16,9 @@ a:hover {
   text-decoration: none;
 }
 input:focus,
-input:focus-visible {
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
   outline: none;
 }
 
@@ -446,4 +449,72 @@ h6 {
 .aa1,
 .aa2 {
   transition-delay: 0.3s;
+}
+
+/* Contact */
+
+.contact {
+  width: 100%;
+}
+
+.contact-container {
+  width: 100%;
+  margin-left: 10%;
+  padding-top: 20vh;
+}
+
+.contact_info {
+  background: #000;
+  color: #fff;
+  padding: 50px 50px;
+}
+.contact_info .info_item {
+  margin-top: 20px;
+}
+.contact_info i {
+  font-size: 35px;
+  margin-right: 20px;
+  width: 35px;
+}
+.contact_info {
+  font-weight: 300 !important;
+}
+.contact_info p {
+  margin-top: 5px;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.contact-form form {
+  width: 65%;
+  max-width: 100%;
+}
+
+.contact-form form h1 {
+  font-weight: 500 !important;
+  font-size: 50px;
+  font-family: "Raleway" !important;
+}
+
+@media screen and (min-width: 700px) {
+  .contact-bg {
+    position: absolute;
+    background-color: #fff;
+    width: 80%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .contact-container {
+    margin: 0 !important;
+  }
+  .contact-box {
+    padding-right: 0 !important;
+    margin-top: 50px;
+  }
 }
