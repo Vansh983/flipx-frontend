@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Flip-X</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <style type="text/css">
+    .shadow-lg {
+      box-shadow: 0 0rem 2rem #dedede !important;
+    }
+    .container-fluid {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .clearfix::after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+    /*:after, :before {
+      box-sizing: border-box;
+  }*/
+
+    .time-slot li .timing {
+      background-color: #ffffff;
+      /* border: 2px solid #e9e9e9; */
+      border-radius: 5px;
+      color: #757575;
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding: 12.5px 5px;
+      text-align: center;
+      position: relative;
+      /* height: 80px; */
+      width: 110px;
+    }
+    .timing {
+      width: 85px;
+      /* margin-right: 2px; */
+      margin-bottom: 12px;
+    }
+    a {
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .time-slot li {
+      float: left;
+      padding-left: 15px;
+      padding-right: 10px;
+      width: 80.28%;
+    }
+    li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+    .time-slot ul {
+      list-style: none;
+      margin-right: -10px;
+      margin-left: -10px;
+      margin-bottom: 0;
+      padding: 10px;
+      display: flex;
+    }
+    .time-slot {
+      margin: auto;
+    }
+    @media screen and (max-width: 780px) {
+      .time-slot li .timing {
+        height: 80px;
+        width: 95px;
+      }
+      .clearfix {
+        width: auto !important;
+      }
+      .timing h4 {
+        font-size: 16px;
+      }
+    }
+    .timing h4 {
+      font-weight: 100;
+      font-size: 20px;
+    }
+  </style>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="row">
+        <div class="container d-flex align-items-center">
+          <div class="col-md-4">
+            <nav class="nav-menu d-none d-lg-block">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="drop-down">
+                  <a href="">Register</a>
+                  <ul>
+                    <li class="drop-down">
+                      <a href="#">Deep Drop Down</a>
+                      <ul>
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="register-to-study.html">Register to Study</a>
+                    </li>
+                    <li>
+                      <a href="register-to-teach.html">Register to Teach</a>
+                    </li>
+                    <!-- <li><a href="#">Drop Down 4</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="index.html" class="logo mr-auto"
+              ><img
+                src="./assets/logo/flipx_ek_aur.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <nav class="nav-menu d-none d-lg-block float-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- <h1 class="logo mr-auto"><a href="index.html">Kautukum</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+
+        <!-- .nav-menu -->
+
+        <!-- <a href="#about" class="get-started-btn">Get Started</a> -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <section class="susbcription-area mt-5">
+      <div class="container-flui">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="section-title">
+              <h1><br /></h1>
+              <h3 style="text-align: center" class="size-h">
+                <!-- Name -->
+                Product Name
+              </h3>
+              <p style="text-align: center">
+                <!-- Highest and lowest bid  -->
+                Highest Bid: <b>₹3456</b> | Lowest Ask:
+                <b>₹892</b>
+              </p>
+            </div>
+
+            <div class="single-product">
+              <!-- product img -->
+              <img
+                class="img-fluid"
+                src="/assets//img/img01_(4)3.jpg"
+                alt=""
+                style="width: 70%; height: 40%; margin-left: 70px"
+              />
+            </div>
+          </div>
+          <div
+            class="col-lg-5 pb-5"
+            style="background-color: #f3f3f3; padding-top: 17px"
+          >
+            <div class="schedule-cont">
+              <h1><br /></h1>
+              <h5 style="text-align: left" class="size-ct">Select Size</h5>
+              <p style="text-align: left">U.S. Mens Sizes | Lowest Asks</p>
+              <div class="row">
+                <!-- Loop for all sizes  -->
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="time-slot row">
+                  <ul class="clearfix col-md-3 col-sm-3">
+                    <li>
+                      <a class="timing" href="#">
+                        <h4>
+                          <span class="text-justify">UK9</span>
+                          <br />
+                          <span class="text-success text-justify"> ₹999</span>
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <a href="index.html" class="logo mr-auto"
+                ><img
+                  src="assets/logo/flipx_ek_aur.png"
+                  alt=""
+                  class="img-fluid"
+                  width="120"
+              /></a>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>About us</h4>
+              <p>
+                The FlipX platform is a transparent exchange platform that helps
+                you bid, buy and sell on some amazing streetwear pieces. All of
+                this, without the hassle of finding the perfect seller or buyer.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra videa magna
+                derita valies
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-4" style="border-top: 0.5px solid #c1c1c147">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Flip-X</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
