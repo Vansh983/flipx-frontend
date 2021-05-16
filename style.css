@@ -29,7 +29,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 #header {
@@ -693,4 +693,56 @@ h6 {
     text-align: center;
     padding: 2px 0;
   }
+}
+
+/* Product */
+
+.product-name {
+  font-weight: 300;
+  font-size: 60px;
+}
+.button {
+  margin: auto;
+  border: 3px solid #222;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 70%;
+}
+.b1 {
+  border: 3px solid #000;
+  background-color: #000;
+  color: #fff;
+}
+.b2 {
+  border: 3px solid #f72c25;
+  background-color: #f72c25;
+  color: #fff;
+}
+.button span {
+  font-size: 12px;
+  opacity: 0.9;
+  line-height: 12px;
+}
+.button .br {
+  border-right: 1px solid #222;
+}
+.button .bl {
+  border-left: 1px solid #222;
+}
+
+.b1 .br,
+.b2 .br {
+  border-right: 1px solid #fff;
+}
+.b1 .bl,
+.b2 .bl {
+  border-left: 1px solid #fff;
+}
+.buttons .view {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
 }

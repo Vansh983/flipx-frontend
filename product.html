@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Flip-X</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+
+  <style type="text/css">
+    .shadow-lg {
+      box-shadow: 0 0rem 2rem #dedede !important;
+    }
+    .container-fluid {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .clearfix::after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+    /*:after, :before {
+      box-sizing: border-box;
+  }*/
+
+    .time-slot li .timing {
+      background-color: #ffffff;
+      /* border: 2px solid #e9e9e9; */
+      border-radius: 5px;
+      color: #757575;
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding: 12.5px 5px;
+      text-align: center;
+      position: relative;
+      /* height: 80px; */
+      width: 110px;
+    }
+    .timing {
+      width: 85px;
+      /* margin-right: 2px; */
+      margin-bottom: 12px;
+    }
+    a {
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+    }
+    .time-slot li {
+      float: left;
+      padding-left: 15px;
+      padding-right: 10px;
+      width: 80.28%;
+    }
+    li {
+      display: list-item;
+      text-align: -webkit-match-parent;
+    }
+    .time-slot ul {
+      list-style: none;
+      margin-right: -10px;
+      margin-left: -10px;
+      margin-bottom: 0;
+      padding: 10px;
+      display: flex;
+    }
+    .time-slot {
+      margin: auto;
+    }
+    @media screen and (max-width: 780px) {
+      .time-slot li .timing {
+        height: 80px;
+        width: 95px;
+      }
+      .clearfix {
+        width: auto !important;
+      }
+      .timing h4 {
+        font-size: 16px;
+      }
+    }
+    .timing h4 {
+      font-weight: 100;
+      font-size: 20px;
+    }
+  </style>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="row">
+        <div class="container d-flex align-items-center">
+          <div class="col-md-4">
+            <nav class="nav-menu d-none d-lg-block">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="drop-down">
+                  <a href="">Register</a>
+                  <ul>
+                    <li class="drop-down">
+                      <a href="#">Deep Drop Down</a>
+                      <ul>
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="register-to-study.html">Register to Study</a>
+                    </li>
+                    <li>
+                      <a href="register-to-teach.html">Register to Teach</a>
+                    </li>
+                    <!-- <li><a href="#">Drop Down 4</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-md-4 text-center">
+            <a href="index.html" class="logo mr-auto"
+              ><img
+                src="./assets/logo/flipx_ek_aur.png"
+                alt=""
+                class="img-fluid"
+            /></a>
+          </div>
+          <div class="col-md-4">
+            <nav class="nav-menu d-none d-lg-block float-right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-search"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- <h1 class="logo mr-auto"><a href="index.html">Kautukum</a></h1> -->
+        <!-- Uncomment below if you prefer to use an image logo -->
+
+        <!-- .nav-menu -->
+
+        <!-- <a href="#about" class="get-started-btn">Get Started</a> -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <div class="product mt-5">
+      <div class="pt-5">
+        <div class="container">
+          <h2 class="product-name">Jordan 1 Low Reverse Bred</h2>
+          <p>
+            <!-- Ticker   -->
+            Ticker: AJ-G1U33 &ensp; | &ensp; Condition
+            <span style="color: #f72c25">New</span> &ensp; | &ensp;
+            <span style="color: #f72c25">100% Authentic</span> &ensp;
+          </p>
+          <div class="row">
+            <div class="col-md-8">
+              <img src="/assets//img/img01-removebg-preview_(1).png" alt="" />
+            </div>
+            <div class="col-md-4">
+              <div class="buttons">
+                <h5 class="text-center mb-5">
+                  Last Sale : <span class="text-danger">Rs. 7879</span>
+                </h5>
+                <div class="button b1">
+                  <div class="row text-center">
+                    <div class="col-md-6 br">
+                      ₹ 120 <br />
+                      <span>Lowest ask</span>
+                    </div>
+                    <div class="col-md-6 bl">
+                      BUY <br />
+                      <span>OR BID</span>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  class="view text-center"
+                  data-toggle="modal"
+                  data-target=".asks-modal"
+                >
+                  View All Asks
+                </p>
+
+                <div class="button b2">
+                  <div class="row text-center">
+                    <div class="col-md-6 br">
+                      ₹ 120 <br />
+                      <span>Highest Bid</span>
+                    </div>
+                    <div class="col-md-6 bl">
+                      SELL <br />
+                      <span>OR ASK</span>
+                    </div>
+                  </div>
+                </div>
+                <p class="view text-center">View All Bids</p>
+                <div class="button">
+                  <div class="row text-center">
+                    <div class="col-md-6 br">
+                      ₹ 120
+                      <!-- <span>Lowest ask</span> -->
+                    </div>
+                    <div class="col-md-6 bl">
+                      Buy Now
+                      <!-- <span>OR BID</span> -->
+                    </div>
+                    <!-- <div class="col-md-12">Instant Buy</div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <a href="index.html" class="logo mr-auto"
+                ><img
+                  src="assets/logo/flipx_ek_aur.png"
+                  alt=""
+                  class="img-fluid"
+                  width="120"
+              /></a>
+              <p>
+                A108 Adam Street <br />
+                New York, NY 535022<br />
+                United States <br /><br />
+                <strong>Phone:</strong> +1 5589 55488 55<br />
+                <strong>Email:</strong> info@example.com<br />
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>About us</h4>
+              <p>
+                The FlipX platform is a transparent exchange platform that helps
+                you bid, buy and sell on some amazing streetwear pieces. All of
+                this, without the hassle of finding the perfect seller or buyer.
+              </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Social Networks</h4>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra videa magna
+                derita valies
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bx bxl-instagram"></i
+                ></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-4" style="border-top: 0.5px solid #c1c1c147">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Flip-X</span></strong
+            >. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>
