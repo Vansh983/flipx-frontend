@@ -336,7 +336,7 @@ h6 {
 .product {
   margin: auto;
 
-  box-shadow: 0px 2px 5px 0px #d8d8d870;
+  /* box-shadow: 0px 2px 5px 0px #d8d8d870; */
 }
 .product img {
   width: 100%;
@@ -347,6 +347,12 @@ h6 {
 .product h5 {
   font-weight: 500 !important;
   font-family: "Montserrat";
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.product h6 {
+  font-size: 12px;
+  margin: 0;
 }
 
 .card-cont {
@@ -745,4 +751,10 @@ h6 {
   margin-top: 5px;
   margin-bottom: 15px;
   cursor: pointer;
+}
+.float-right {
+  float: right;
+}
+.justify-space-between {
+  justify-content: space-between;
 }
